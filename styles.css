@@ -32,7 +32,7 @@ body {
 
 .banner {
   height: 90vh;
-  background-image: url("PORTFOLIO-BANNER.png");
+  background-image: url("https://github.com/ingridslv/repositorio-imagens/blob/8843282d757772da669d552c70d041df720ed685/assets/img/portifolio/PORTFOLIO-BANNER.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -272,3 +272,4 @@ body {
     font-size: 14px;
   }
 }
+
