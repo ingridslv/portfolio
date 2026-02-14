@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-light: #74a84a;
+  --primary-dark: #2c541d;
+  --black: #000000;
+  --white: #efefef;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #020617;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+
+#dynamic-text {
+  color: #ff00f5;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.banner {
+  height: 90vh;
+  background-image: url("PORTFOLIO-BANNER.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+
+.banner-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.banner-left {
+  flex: 1.5;
+  color: #fff;
+}
+
+.banner-right {
+  flex: 0.5;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Título */
+.banner-title {
+  margin: 1.5rem 0;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+/* Botão */
+.btn-primary {
+  display: inline-block;
+  margin: 1.5rem 0;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(90deg, #a855f7, #6366f1);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Card */
+.banner-card {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.banner-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.menu {
+  margin-top: 2rem;
+  padding: 10px;
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 150px;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: #cb70ff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.logos {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.logos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logos img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.projetos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.projetos-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projetos img {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projetos img:hover {
+    transform: translateY(-5px);
+}
+
+.projetos #texto-meio {
+    text-align: center;
+    width: 80%;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.projetos p, h3 {
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+
+  .banner {
+    height: auto;
+    padding: 4rem 0;
+    padding-top: 120px;
+  }
+
+  .banner-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .banner-left {
+    flex: 1;
+    text-align: left;
+  }
+
+  .banner-right {
+    display: none;
+  }
+
+  .banner-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  #dynamic-text {
+    font-size: 32px;
+  }
+
+  .banner-left p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .btn-primary {
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0.8rem 0;
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .logos img {
+    height: 30px;
+    width: auto;
+  }
+
+  .banner-card {
+    margin-top: 2rem;
+    padding: 1.2rem;
+  }
+
+  .banner-card h3 {
+    font-size: 16px;
+  }
+
+  .banner-card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .projeto-card {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .projeto-card img {
+    width: 100%;
+  }
+
+  #texto-meio {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingrid Arnaud - Portifólio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-xh6giX..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+
+</head>
+<body>
+    <div class="menu">
+        <ul><li><a href="mailto:ingrid.arnaud.ea@gmail.com"><i class="fa-solid fa-envelope"></i>
+        E-mail</a></li></ul>
+        <ul><li><a href="https://github.com/ingridslv"><i class="fa-brands fa-github"></i>
+        GitHub</a></li></ul>
+        <ul><li><a href="https://wa.me/5591980849759?text=Vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20mais%20informações"><i class="fa-brands fa-whatsapp"></i>
+        WhatsApp</a></li></ul>
+      </div>
+    <section class="banner">
+  <div class="banner-container">
+
+    <!-- DIV ESQUERDA (CONTEÚDO) -->
+    <div class="banner-left">
+
+      <span class="badge">Sejam bem vindos!</span>
+
+      <h1 class="banner-title">
+        Sou Ingrid Arnaud <br>
+  <span id="dynamic-text"></span>
+</h1>
+<p>Transformo ideias em experiências digitais intuitivas, responsivas e orientadas a resultados. <br> Responsividade • Performance • UX • Código organizado • Foco em conversão</p>
+
+      <!-- <a href="#contato" class="btn-primary">Ver Currículo</a> -->
+      <a href="https://www.linkedin.com/in/ingrid-da/" class="btn-primary" style="margin-left: 10px;">LinkedIn</a>
+
+      <div class="logos">
+        <img src="assets/img/portifolio/logos (1).png" alt="">
+        <img src="assets/img/portifolio/logos (6).png" alt="">
+        <img src="assets/img/portifolio/logos (7).png" alt="">
+        <img src="assets/img/portifolio/logos (2).png" alt="">
+        <img src="assets/img/portifolio/logos (3).png" alt="">
+        <img src="assets/img/portifolio/logos (4).png" alt="">
+        <img src="assets/img/portifolio/logos (5).png" alt="">
+        <img src="assets/img/portifolio/react-logo.png" alt="">
+      </div>
+
+      <div class="banner-card">
+        <h3>Freelance Web & Mobile UI/UX Designer</h3>
+        <p>
+          Sou desenvolvedora frontend focada na criação de landing pages e sites institucionais orientados à conversão de clientes. Trabalho com WordPress e Elementor, desenvolvendo páginas responsivas, formulários estratégicos, blogs e áreas de conteúdo. Assim como atuo transformando layouts em páginas funcionais e escaláveis, aplicando boas práticas de HTML, CSS e JavaScript, com foco em usabilidade, performance e consistência visual para geração de resultados.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="banner-right"></div>
+
+  </div>
+</section>
+
+<div class="projetos">
+    <h2>Projetos que Realizei</h2> <br>
+    <p id="texto-meio">Antes de iniciar qualquer projeto, realizo um estudo da marca e do posicionamento da empresa, organizando a estrutura e as informações de forma estratégica. Esse processo garante páginas que fortalecem a identidade do negócio, comunicam com clareza e otimizam a experiência do usuário, favorecendo tanto a empresa quanto seus objetivos de conversão.</p>
+    <div class="projetos-container">
+        <div class="projeto-card" style="display: flex; flex-direction: column;">
+        <img src="assets/img/portifolio/projetos (1).png" alt="Projeto 1">
+        <h3>Projeto 1</h3>
+        <p>Clínica médica.</p>
+        </div>
+        <div class="projeto-card">
+        <img src="assets/img/portifolio/projetos (2).png" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <p>Clínica médica.</p>
+        </div>
+        <div class="projeto-card">
+        <img src="assets/img/portifolio/projetos (3).png" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <p>Site institucional de faculdade <br> com sistema de gestão de arquivos e conteúdo integrado.</p>
+        </div>
+        <div class="projeto-card">
+        <img src="assets/img/portifolio/projetos (4).png" alt="Projeto 3">
+        <h3>Projeto 4</h3>
+        <p>Site de Marine supplies internacional. </p>
+        </div>
+        <div class="projeto-card">
+        <img src="assets/img/portifolio/projetos (5).png" alt="Projeto 3">
+        <h3>Projeto 5</h3>
+        <p>Site de cooperativa anestesista.</p>
+        </div>
+        <div class="projeto-card">
+        <img src="assets/img/portifolio/projetos (6).png" alt="Projeto 3">
+        <h3>Projeto 6</h3>
+        <p>Site institucional de Igreja.
+        </div>
+
+        <a href="https://wa.me/5591980849759?text=Vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20mais%20informações" class="btn-primary" style="margin-bottom: 50px; width: 90%;">Entrar em Contato</a>
+    </div>
+</div>
+
+
+
+</body>
+
+    <script>
+  const texts = [
+    "Desenvolvedora FrontEnd",
+    "Web Designer",
+    "UI/UX Designer"
+  ];
+
+  let index = 0;
+  const element = document.getElementById("dynamic-text");
+
+  function changeText() {
+    element.textContent = texts[index];
+    index = (index + 1) % texts.length;
+  }
+
+  changeText();
+  setInterval(changeText, 2500);
+</script>
+</html>
